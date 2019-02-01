@@ -136,7 +136,7 @@ def index():
                 delay = 0
 
             try:
-                ftime = org_time.strftime('%m/%d/%Y %I:%M:%S %p')
+                ftime = org_time.isoformat(' ')
                 r[c] = {
                     'Timestmp': org_time,
                     'Time': ftime,
